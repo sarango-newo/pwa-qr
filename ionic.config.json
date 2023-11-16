@@ -1,0 +1,7 @@
+{
+  "name": "pwa-qr",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
