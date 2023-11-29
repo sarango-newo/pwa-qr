@@ -1,20 +1,31 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+  <div class="newo">
+    <img src="./../../assets/image/newoblanco.png" alt="">
+  </div>
+  <div class="container">
+    <h1 class="headerQR">Invitado</h1>
+    <div class="qr" *ngIf="active">
+      <img [src]="useQR">
+    </div>
+    <div *ngIf="!active">
+      <div class="qrDisabled">
+        <img [src]="useQR">
+        <p>Disabled</p>
+      </div>
+    </div>
+    <div>
+      <ul>
+        <li>Fecha + Hora</li>
+        <li>Sede</li>
+      </ul>
+    </div>
+    <div class="downloadBtns">
+      <a href="https://play.google.com/store/apps/details?id=io.newo.newoappv31" target="_blank" class="btns">
+        <img src="https://freeiconshop.com/wp-content/uploads/edd/google-play-badge.png" alt="">
+      </a>
+      <a href="https://apps.apple.com/co/app/newo/id1534734683" target="_blank" class="btns">
+        <img src="https://freeiconshop.com/wp-content/uploads/edd/app-store-badge-128x128.png" alt="">
+      </a>
+    </div>
   </div>
 </ion-content>
