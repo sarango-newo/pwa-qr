@@ -1,19 +1,20 @@
-.newo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 16px;
-   img {
-    width: 40%;
-   }
-}
 
 .container {
-  height: 75vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: space-between;
+
+  .newo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 16px;
+     img {
+      width: 40%;
+     }
+  }
 
   ul {
     list-style: none;
@@ -45,6 +46,7 @@
   display: flex;
   gap: 16px;
   justify-content: center;
+  margin: 0 8px 16px 8px;
 
   .btns {
     display: flex;
@@ -52,11 +54,17 @@
     align-items: center;
   }
 
+  .playstore {
+    border: solid 1px lightgrey;
+    border-radius: 8px;
+  }
+
   img {
-    width: 85%;
+    width: 192px;
+    height: 65px;
   }
 }
 h1 {
   text-align: center;
-  height: 5vh;
+  margin: 0;
 }
